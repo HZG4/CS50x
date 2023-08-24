@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: It ran the quickest for sorted50000.txt
+
+sort2 uses: Merge Sort
+
+How do you know?: It ran the quickest for random50000.txt
+
+sort3 uses: Selection Sort
+
+How do you know?: It ran slowest for the sorted50000.txt
