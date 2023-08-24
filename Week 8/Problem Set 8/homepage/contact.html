@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+
+.text-padding {
+    padding: 20px;
+}
+
+.contact-box {
+    width: auto;
+    background-color: rgb(238, 238, 238);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30%;
+    margin-right: 31.8%;
+}
+
+.contact-form {
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 35%;
+}
+
+.form-field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-field label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#comment {
+    width: 450px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.form-field textarea {
+    resize: vertical;
+}
+
+.double-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" style="padding: 0px 30px;">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section">
+    <div class="contact-box">
+      <h2 class="text-padding">Contact Me</h2>
+      <p class="text-padding">Thank you for visiting our website.
+        <br>
+        If you have feedback about any page on
+        this website <br>
+        please use the feedback form below.
+        <br><br>
+        For other general inquiries,
+        call +92 304 7315455 or write to:
+        <br><br>
+        Plot 245. Fateh Sher Colony<br>
+        Sahiwal 57000<br>
+        Punjab Pakistan</p>
+    </div>
+
+    <div class="contact-form">
+      <form id="feedback-form" action="/submit" method="POST">
+        <div class="form-field double-field">
+          <div class="half-field">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" required>
+          </div>
+          <div class="half-field">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" required>
+          </div>
+        </div>
+
+        <div class="form-field double-field">
+          <div class="half-field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+          </div>
+          <div class="half-field">
+            <label for="confirmEmail">Confirm Email *</label>
+            <input type="email" id="confirmEmail" placeholder="Confirm Email" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="comment">Comment *</label>
+          <textarea id="comment" rows="6" maxlength="1000" placeholder="Max 1000 characters" required></textarea>
+        </div>
+
+        <button type="submit" class="explore-button">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="black-footer">
+    <div class="footer-column">
+      <h3>Security & Brand</h3>
+      <ul>
+        <li><a href="#">Report Copyright Infringement</a></li>
+        <li><a href="#">Report Security Issue</a></li>
+        <li><a href="#">Trademark Notice</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Website</h3>
+      <ul>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Digital Accessibility</a></li>
+        <li><a href="#">Privacy Statement</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Get In Touch</h3>
+      <ul>
+        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">Jobs</a></li>
+      </ul>
+    </div>
+    <div class="social-links">
+      <p><a href="#">facebook</a> | <a href="#">Linkedin</a> | <a href="#">Instagram</a> | <a href="#">Youtube</a></p>
+    </div>
+  </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

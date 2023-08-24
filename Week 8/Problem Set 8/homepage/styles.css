@@ -1,0 +1,158 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Navigation */
+.top-nav {
+  background-color: crimson;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-color: crimson;
+  color: white;
+}
+
+.hero video {
+  width: 100%;
+  height: auto;
+}
+
+.floating-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+/* Blog Sections */
+.blog-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog-box {
+  width: 370px;
+  background-color: rgb(238,238,238);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1);
+  color: #1e1e1e;
+}
+
+.blog-box img {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+}
+
+.blog-box h2 {
+  text-align: center;
+  padding: 0px;
+}
+
+.blog-box p{
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom:100px;
+  padding: 30px;
+  line-height: 20px;
+}
+
+.explore-button {
+  background-color: crimson;
+  color: white;
+  border-color: transparent;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* Black Footer */
+.black-footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-column {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 30px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column a {
+  color: gray;
+  text-decoration: none;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: gray;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: crimson;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 9999;
+}

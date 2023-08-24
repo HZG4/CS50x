@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+
+            // Turn button green when answer is correct.
+            document.addEventListener('DOMContentLoaded",function(){
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click',function() {
+                    correct.style.backgroundColor = "green";
+                    document.querySelector("#answer1").innerHTML = "Correct!";
+                });
+
+                // Turn button red when answer is incorrect.
+                let incorrect = document.querySelectorAll(".incorrect");
+                for(let i = 0; i < incorrect.length; i++){
+                    incorrect[i].addEventListener("click",function() {
+                        incorrect[i].style.backgroundColor = "red";
+                        document.querySelector("#answer2").innerHTML = "Incorrect!";
+                    });
+                }
+
+                document.querySelector("#check").addEventListener("click", function(){
+                    let input = document.querySelector("Input");
+                    if (input.value.toLowerCase() == "islamabad"){
+                        input.style.backgroundColor = "green";
+                        document.querySelector("#answer2").innerHTML = "Correct!";
+                    }
+                    else {
+                        input.style.backgroundColor = "red";
+                        document.querySelector("#answer2").innerHTML = "Incorrect!";
+                    }
+                });
+
+            );
+
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <!-- TODO: Add multiple choice question here -->
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which is the top ranked CS university in Pakistan?</h3>
+                <button type="text" class="correct">COMSATS University</button>
+                <button type="text" class="incorrect">FAST NUCES</button>
+                <button type="text" class="incorrect">IT University</button>
+                <button type="text" class="incorrect">Punjab University</button>
+
+                <p id="answer1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is the capital of Pakistan?</h3>
+                <form>
+                    <input type="text" placeholder="Capital" />
+                    <button id="check">Check Answer</button>
+                    <P id="answer2"></P>
+                </form>
+
+            </div>
+        </div>
+    </body>
+</html>
