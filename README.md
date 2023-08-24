@@ -1,6 +1,7 @@
 # CS50x Problem Sets and Labs Repository
 
-![CS50x Logo](cs50x_logo.png)
+![CS50-logo](https://github.com/HZG4/CS50x/assets/106840364/3da4f157-6b4c-4e4c-ae11-6c569600abce)
+
 
 Welcome to the CS50x Problem Sets and Labs Repository! This repository contains all the problem sets and labs for the CS50x course. CS50x is an introductory computer science course offered by Harvard University, designed to provide a solid foundation in the fundamentals of computer science and programming.
 
