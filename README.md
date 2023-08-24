@@ -47,7 +47,7 @@ CS50x offers a variety of resources to support your learning:
 
 ## Acknowledgments
 
-I want to express our gratitude to Harvard University and the CS50x team for creating this wonderful course and making it accessible to learners around the world.
+I want to express my gratitude to Harvard University and the CS50x team for creating this wonderful course and making it accessible to learners around the world.
 
 ## License
 
